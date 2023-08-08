@@ -1,0 +1,5 @@
+
+<router-outlet *ngIf= "loginflag"></router-outlet>
+<button (click)="loginclick()">Login</button>
+<button (click)="dashclick()">Dashboard</button>
+<router-outlet *ngIf="dashflag"></router-outlet>
