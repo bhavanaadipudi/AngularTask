@@ -1,5 +1,13 @@
 
-<router-outlet *ngIf= "loginflag"></router-outlet>
-<button (click)="loginclick()">Login</button>
-<button (click)="dashclick()">Dashboard</button>
-<router-outlet *ngIf="dashflag"></router-outlet>
+<div class="center-content">
+    <button mat-raised-button color="primary" class="navigation-button" routerLink="/login">Go to Login</button>
+    <button mat-raised-button color="primary" class="navigation-button" routerLink="/dashboard">Go to Dashboard</button>
+
+    <br /><br /><br /><br />
+
+    <router-outlet></router-outlet>
+
+    <br /><br />
+
+    <app-task></app-task>
+</div>

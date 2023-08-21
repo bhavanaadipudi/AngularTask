@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { NgModel} from '@angular/forms';
-import { NgFor } from '@angular/common';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -8,5 +7,13 @@ import { NgFor } from '@angular/common';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-          names : string[] =['bhavana','adipudi','navya']
+  @Input() userID: string ;
+
+ 
+  collection: string[];
+
+  constructor() {
+    this.collection = ['bhavana', 'lokesh', 'adipudi'];
+    this.userID= '';
+  }
 }

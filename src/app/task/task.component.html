@@ -1,0 +1,13 @@
+<h2 mat-title>
+    Task List
+  </h2>
+  <mat-nav-list>
+    <mat-list-item *ngFor="let task of tasks">{{ task }}</mat-list-item>
+  </mat-nav-list>
+  
+  <form>
+    <mat-form-field>
+        <input matInput [(ngModel)]="newTask" placeholder="New Task">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="addTask()">Add Task</button>
+  </form>

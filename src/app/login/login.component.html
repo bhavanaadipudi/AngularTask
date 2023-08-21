@@ -1,9 +1,15 @@
-<br>
-<label>UserId:</label>
-<input type="text" id="user" [(ngModel)="user"]>
-<label>Password:</label>
-<input type="password" id="password"[(ngModel)]="password">
-
-<h2>{{user}}
-{{password}}
-</h2>
+<form (ngSubmit)="login()">
+     <div>
+         <mat-form-field>
+             <mat-label for="userID">User ID:</mat-label>
+             <input matInput type="text" id="userID" [(ngModel)]="userID" name="userID" required>
+         </mat-form-field>
+     </div>
+     <div>
+         <mat-form-field>
+             <mat-label for="password">Password:</mat-label>
+             <input matInput type="password" id="password" [(ngModel)]="password" name="password" required>
+         </mat-form-field>
+     </div>
+     <button mat-raised-button type="submit">Login</button>
+ </form>
