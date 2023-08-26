@@ -1,0 +1,94 @@
+/* Style for the todo list container */
+/* Style for the todo list container */
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    color: #fff;
+  }
+  
+  /* Style for the todo list title */
+  .todo-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .todo-container pre {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    overflow: auto;
+  }
+  
+  /* ... (other styles) ... */
+  
+  
+  /* Style for the "Add Todo" section */
+  .add-todo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-todo input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .add-todo button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .add-todo button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for each todo item */
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c0101;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-item:hover {
+    background-color: #dc1111;
+  }
+  
+  .todo-item button {
+    background-color: #1ad69b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-item button:hover {
+    background-color: blue;
+  }
+  

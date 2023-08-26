@@ -1,0 +1,44 @@
+/* Center the content horizontally and vertically */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* Style for navigation buttons */
+  .navigation-button {
+    margin: 10px;
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navigation-button:hover {
+    background-color: #007bff;
+    color:red;
+  }
+  
+  /* Provide space between router outlet and other elements */
+  router-outlet {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  /* Style for the app-todo component */
+  app-todo {
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  /* ... (other styles) ... */
+  

@@ -1,0 +1,52 @@
+/* Style for the form container */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  /* Style for form field labels */
+  mat-label {
+    font-weight: bold;
+  }
+  
+  /* Style for input fields */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for buttons */
+  button[type="submit"] {
+    background-color: transparent;
+    color:red;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Style for form error messages */
+  .mat-form-field-invalid .mat-form-field-underline {
+    background-color: #f44336 !important;
+  }
+  
+  .mat-form-field-invalid .mat-form-field-label {
+    color: #f44336 !important;
+  }
+  
+  .mat-form-field-invalid .mat-input-element {
+    color: #f44336;
+  }
+  

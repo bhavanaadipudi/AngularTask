@@ -12,13 +12,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule } from '@angular/material/list';
+import { TodoComponent } from './todo/todo.component';
+import{HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    TaskComponent
+    TaskComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { MatListModule } from '@angular/material/list';
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatSlideToggleModule,
     MatInputModule,
     MatButtonModule, MatListModule

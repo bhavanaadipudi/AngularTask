@@ -1,0 +1,26 @@
+/* Add this to your component's CSS file (e.g., dashboard.component.css) */
+
+.dashboard-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-list {
+    max-width: 400px;
+    margin: auto;
+    color: red;
+  }
+  
+  .dashboard-list-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: blueviolet;
+  }
+  
+  /* Optional: Hover effect for list items */
+  .dashboard-list-item:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    color:aquamarine;
+  }
+  
