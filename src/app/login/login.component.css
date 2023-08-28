@@ -1,52 +1,64 @@
-/* Style for the form container */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background: linear-gradient(45deg, #3498db, #2c3e50);
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #fff;
-  }
-  
-  /* Style for form field labels */
-  mat-label {
-    font-weight: bold;
-  }
-  
-  /* Style for input fields */
-  mat-form-field {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  
-  /* Style for buttons */
-  button[type="submit"] {
-    background-color: transparent;
-    color:red;
-    border: 2px solid #007bff;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  /* Style for form error messages */
-  .mat-form-field-invalid .mat-form-field-underline {
-    background-color: #f44336 !important;
-  }
-  
-  .mat-form-field-invalid .mat-form-field-label {
-    color: #f44336 !important;
-  }
-  
-  .mat-form-field-invalid .mat-input-element {
-    color: #f44336;
-  }
-  
+/* login.component.css */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.login-form {
+  width: 400px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #999;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

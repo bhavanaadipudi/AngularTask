@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgModel } from '@angular/forms';
+import { FormBuilder, FormGroup, NgModel, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,28 +8,40 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  userID: string;
-  password: string;
-  @Output() loginSuccess: EventEmitter<{ userID: string }> = new EventEmitter<{ userID: string }>();
   
+  @Output() loginSuccess: EventEmitter<{ userID: string }> = new EventEmitter<{ userID: string }>();
+  loginForm: FormGroup; // Declare the form group
 
+  constructor(private fb: FormBuilder, private route: Router) {
+    this.loginForm = this.fb.group({
+      userID: ['', [Validators.required]],
+      password: ['', [Validators.required, Validators.minLength(6)]]
+    });
+  }
 
-  constructor(private route:Router) {
+  get userID() {
+    return this.loginForm.get('userID');
+  }
 
-    this.userID = '';
-    this.password = '';
-
+  get password() {
+    return this.loginForm.get('password');
   }
 
   login() {
-    if (this.userID && this.password) {
-      this.loginSuccess.emit({ userID: this.userID });
+    if (this.loginForm.valid) {
+      const userID = this.loginForm.value.userID;
+      // Do something with the user ID
       this.route.navigate(['/dashboard']);
-
     } else {
-      alert("Tried to Login");
+      alert('please enter valid input fields');
     }
   }
 }
+
+  
+
+
+  
+
            
 

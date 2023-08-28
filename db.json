@@ -1,13 +1,8 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "Complete given task",
-      "status": "done"
-    },
-    {
       "title": "drink water",
-      "status": "done",
+      "status": "pending",
       "id": 2
     },
     {
@@ -24,11 +19,6 @@
       "title": "Bath twice a day",
       "status": "pending",
       "id": 5
-    },
-    {
-      "title": "excercise for 1 hour",
-      "status": "pending",
-      "id": 6
     }
   ]
 }
